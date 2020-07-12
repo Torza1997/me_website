@@ -1,10 +1,4 @@
-let scroll;
-scroll = () =>{
-    let el = document.getElementById('skill');
-    // get scroll position in px
-    console.log(el.scrollTop);
 
-}
 function toggle(){
     var head = document.getElementById("header");
     head.classList.toggle('active');
@@ -20,6 +14,16 @@ VanillaTilt.init(document.querySelector(".Timeline"), {
     max: 25,
     speed: 400
 });
+
+var w = window.innerWidth;
+if(w > 777){
+  VanillaTilt.init(document.querySelector(".Timeline"), {
+      max: 25,
+      speed: 400
+    });
+   }else{
+    //not do
+   }
 
 //skill 3d 
 
