@@ -17,6 +17,5 @@ if(w > 777){
    }else{
     //not do
    }
-//skill 3d 
 
 
