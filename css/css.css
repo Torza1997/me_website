@@ -383,6 +383,7 @@ section:nth-child(odd){
     }
    
 }
+/*responsive*/
 @media (max-width: 700px){
     ._contract ul li a{
         position: relative;
