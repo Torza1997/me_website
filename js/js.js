@@ -8,12 +8,6 @@ VanillaTilt.init(document.querySelector(".img_box"), {
     speed: 400
 });
 
-//timeline 3d
-VanillaTilt.init(document.querySelector(".Timeline"), {
-    max: 25,
-    speed: 400
-});
-
 var w = window.innerWidth;
 if(w > 777){
   VanillaTilt.init(document.querySelector(".Timeline"), {
