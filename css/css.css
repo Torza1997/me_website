@@ -304,7 +304,7 @@ section:nth-child(odd){
     color: #00ff37;
     text-decoration: none;
 }
-/*media resposive*/
+/*media resposive */
 @media (max-width: 1450px){
     section h2{
         font-size: 2.4rem;
