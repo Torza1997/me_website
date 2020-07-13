@@ -81,7 +81,10 @@ section {
     align-items: center;
     padding: 150px 200px 150px 200px;
 }
-section #me_{
+section .img_box {
+    padding-right: 50px;
+}
+section .img_box #me_{
     width: 500px; 
     border-radius: 20px;
 }
@@ -89,13 +92,13 @@ section h2{
     font-size: 3rem;
 }
 section .section-content h2{
-
+    padding-right: 40px;
     padding-bottom: -10px;
     text-transform: uppercase;
 }
 section .section-content p{
     font-size: 22px;
-    padding: 0 40px 0 0;
+    padding: 0 0 0 40px;
     text-align: left;
 
 }
@@ -122,6 +125,17 @@ section:nth-child(odd){
     opacity: .2;
     z-index: -1;
 }
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    opacity: .08;
+    z-index: -1;
+  }
+
 .section1::before,.section3::before{
     content: '';
     position: absolute;
@@ -268,13 +282,13 @@ section:nth-child(odd){
     text-decoration: none;
     font-size: 80px;
     border-radius: 50%;
-    color: #111;
+    color: #e2e2e2;
     box-shadow: inset -1px  -1px 2px rgba(0, 0, 0,0.2),2px  2px 2px rgba(0, 0, 0,0.2);
     transition: .5s;
 }
 
 ._contract  ul li a:hover{
-    color: #e2e2e2;
+    color: #111;
     transform: translateY(-20px);
     box-shadow: inset -1px  -1px 2px rgba(0, 0, 0,0.2),2px  24px 10px rgba(0, 0, 0,0.1);
 }
@@ -291,7 +305,16 @@ section:nth-child(odd){
     text-decoration: none;
 }
 /*media resposive*/
+@media (max-width: 1450px){
+    section h2{
+        font-size: 2.4rem;
+    }
+}
 @media (max-width: 1215px){
+    section .img_box {
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
     .text_span{
         display: none;
     }
@@ -397,7 +420,7 @@ section:nth-child(odd){
         text-decoration: none;
         font-size: 30px;
         border-radius: 50%;
-        color: #111;
+        color: #e2e2e2;
         box-shadow: inset -1px  -1px 2px rgba(0, 0, 0,0.2),2px  2px 2px rgba(0, 0, 0,0.2);
         transition: .5s;
     }
@@ -418,9 +441,9 @@ section:nth-child(odd){
        font-size: 10px;
     }
 }
-@media (max-width: 450px){
+@media (max-width: 480px){
     section .section-content p{
-        font-size: 18px;
+        font-size: 20px;
         padding:0;
     }
     section h2{
@@ -435,9 +458,12 @@ section:nth-child(odd){
         padding-top: 50px;
      }
 }
-@media (max-width: 367px){
+@media (max-width: 380px){
+    section .section-content p{
+        font-size: 18px;
+    }
     section h2{
-        font-size: 23px;
+        font-size: 20px;
     }
     #Skill .section-content{
         width: 130%;
