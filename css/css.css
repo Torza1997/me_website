@@ -257,6 +257,11 @@ section:nth-child(odd){
      }  
 }
 
+
+._contract:hover{
+    position: relative;
+    width: 120%;
+}
 ._contract ul {
     position: relative;
     display: flex;
@@ -267,8 +272,8 @@ section:nth-child(odd){
 }
 ._contract ul li a{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,6 +447,11 @@ section:nth-child(odd){
         font-size: 8px;
         padding-top: 50px;
      }
+}
+@media (max-width: 408px){
+    section h2{
+        font-size: 27px;
+    }
 }
 @media (max-width: 380px){
     section .section-content p{
