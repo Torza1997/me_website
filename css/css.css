@@ -406,7 +406,7 @@ section:nth-child(odd){
     }
    
 }
-/*responsive ssssss*/
+/*responsive*/
 @media (max-width: 700px){
     ._contract ul li a{
         width: 80px;
